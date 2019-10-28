@@ -11,6 +11,7 @@ STORE libur FOR 5
     DO LOOP FROM Tanggal UNTIL 31
         IF Tanggal MOD 5 EQUALS to 0
             THEN DISPLAY Tanggal and Tempat Fitness Tutup
+            END IF
         ELSE
             STORE hadir BY EMPTY
                 IF Tanggal IS 7, ADD Tono, Anton, Budi TO hadir
@@ -21,6 +22,7 @@ STORE libur FOR 5
             IF COUNT MOD Budi VALUE EQUALS TO 0 THEN ADD Budi to EMPTY
             
             DISPLAY Tanggal and hadir
+            END ELSE
     END LOOP
 */
 
