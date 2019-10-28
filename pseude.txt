@@ -1,0 +1,33 @@
+let 'tono' without value
+let 'anton' without value
+let 'budi' without value
+let 'i' by 7
+let 'count' by 0
+
+while i <= 31
+    if count == 0
+        display 'Tanggal 7: Tono, Anton, Budi'
+    end if
+    else
+        if i % 5 is 0
+            display 'Tempat Fitness Tutup'
+        end if
+        else
+            if count % 2 is 0
+                set tono by 'Tono'
+            end if
+            if count % 4 is 0
+                set anton by 'anton'
+            end if
+            if count % 2 is 0
+                set budi by 'budi'
+            end if
+            display 'tanggal' + i + tono + anton + budi
+        end else
+    end else
+    add count by 1
+    add i by 1
+    set tono by empty value
+    set anton by empty value
+    set budi by empty value
+end while
