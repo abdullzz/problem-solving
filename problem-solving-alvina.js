@@ -16,7 +16,7 @@ START
     ELSE
       INIT an empty array with variable name 'members'
       FOR every member data in input array DO
-        IF date - 'start' mod member frequency equals to 0 DO
+        IF (date - 'start') mod member frequency equals to 0 DO
           ADD member names to 'members' array
         ENDIF        
       ENDFOR
@@ -51,7 +51,7 @@ function problemSolving(memberData, start) {
     } else { 
       var members = [];
       for (var j = 0; j < memberData.length; j++) {
-        if ((i - 7) % memberData[j][1] === 0) {
+        if ((i - start) % memberData[j][1] === 0) {
           members.push(memberData[j][0]);
         }
       }
