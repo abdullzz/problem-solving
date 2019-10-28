@@ -1,0 +1,45 @@
+problem-solving begin
+
+set currentDate = 7
+set tono = 2
+set anton = 4
+set budi = 5
+set monthMax = 31
+set closeMult = 5
+set people as an array
+set toBeDisplayed as an empty string
+
+for each day from currentDate until monthMax
+  reinitialize people into empty array
+  set toBeDisplayed equal to "Tanggal "
+  add currentDate to toBeDisplayed and add ": "
+
+  if tono is bigger than 0 then
+    tono = tono - 1
+  else
+    add "Tono" to people array
+    set tono to 2
+  
+  if anton is bigger than 0 then
+    anton = anton - 1
+  else
+    add "Anton" to people array
+    set anton to 4
+
+  if budi is bigger than 0 then
+    budi = budi -1
+  else
+    add "Budi" to people array
+    set budi to 5
+  
+  if currentDate divided by closeMult does not have remainder then
+    for each person in people array do
+      add person to toBeDisplayed
+  
+  if currentDate is equal to 7 then
+    display "Tanggal 7: Tono, Anton, Budi"
+  else
+    display toBeDisplayed
+end loop
+
+problem-solving end
